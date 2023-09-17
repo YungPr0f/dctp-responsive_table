@@ -1,0 +1,144 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: "Mooli", sans-serif;
+}
+
+.header {
+    height: 5rem;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    background: white;
+}
+
+.brand {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand img {
+    width: 100%;
+    height: auto;
+}
+
+.developer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 10rem 2.5rem 5rem 2.5rem;
+    padding: 0 2.5rem;
+}
+
+table {
+    width: 100%;
+    background: #fff;
+    margin: 1em 0;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    box-shadow: none;
+    border-radius: 0.3rem;
+    text-align: left;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.87);
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Headers */
+table > thead {
+    box-shadow: none;
+}
+table > thead > tr > th {
+    cursor: auto;
+    background: #f9fafb;
+    text-align: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 1em 0.8em;
+    vertical-align: inherit;
+    font-style: none;
+    font-weight: bold;
+    text-transform: none;
+    border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+    border-left: none;
+    white-space: nowrap;
+}
+table > thead > tr > th:first-child {
+    border-left: none;
+}
+table > thead > tr:first-child > th:first-child {
+    border-radius: 0.3rem 0 0 0;
+}
+table > thead > tr:first-child > th:last-child {
+    border-radius: 0 0.3rem 0 0;
+}
+table > thead > tr:first-child > th:only-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+/* Table Row */
+table > tr > td,
+table > tbody > tr > td {
+    border-top: 1px solid rgba(34, 36, 38, 0.1);
+}
+table > tr:first-child > td,
+table > tbody > tr:first-child > td {
+    border-top: none;
+}
+
+/* Table Cells */
+table > tbody > tr > td,
+table > tr > td {
+    padding: 0.8em 0.8em;
+    text-align: inherit;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 8rem;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        width: 40%;
+    }
+
+    .topic {
+        order: 3;
+        flex: 1;
+        text-align: center;
+    }
+
+    .developer a {
+        display: none;
+    }
+
+    .container {
+        margin: 12rem 1rem 2rem 1rem;
+        padding: 0 1rem;
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+
+    table {
+        display: block;
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+}
