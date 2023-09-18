@@ -1,6 +1,8 @@
 # DCTP Responsive Table
 DevCareer Tech Program - Frontend Engineering - Assignment 01
 
+Demo - https://omotoyosi.me/dctp/responsive-table
+
 ## Assignment Description
 Build a well responsive table with 20 records. You're to use just HTML and CSS, and then push your code to github.  
 Note: Your table must be responsive across all devices.  
